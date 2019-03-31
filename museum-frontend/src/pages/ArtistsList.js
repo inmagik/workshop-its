@@ -1,6 +1,8 @@
 import React from 'react'
 import TopBar from '../components/TopBar'
 import { Link } from 'react-router-dom'
+import chunk from 'lodash/chunk'
+
 
 export default class ArtistList extends React.Component {
 
@@ -32,9 +34,23 @@ export default class ArtistList extends React.Component {
 
 
     render(){
-        return (<div className="container-fluid py-5 with-topbar">
+        const { artists } = this.state
+        const chunkedArtists = chunk(artists, 2)
+
+        console.log("chunkedArtists", chunkedArtists)
+
+        return (<div className="container-fluid pb-5 with-topbar">
             <TopBar></TopBar>
-            <div className="row"></div>
+            {chunkedArtists.length > 0 && chunkedArtists.map((row, i) => (
+                <div className="row">
+                    {row.map(artist => (
+                        <div className="col">
+                        {artist.name}
+                        </div>
+                    ))}
+
+                </div>
+            ))}
 
         </div>)
     }
