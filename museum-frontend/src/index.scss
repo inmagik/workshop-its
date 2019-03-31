@@ -3,3 +3,16 @@
 .with-topbar {
     padding-top: 70px;
 }
+
+.ArtistCard {
+
+    img.artist {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .description {
+        height: 180px;
+    }
+
+}
