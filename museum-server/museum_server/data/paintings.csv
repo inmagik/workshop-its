@@ -1,7 +1,20 @@
-artist,title,url,year
-"Paul Klee","Palloncino Rosso","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Red_Balloon.JPG/1920px-Red_Balloon.JPG",1922
-"Paul Klee","Polifonia","https://upload.wikimedia.org/wikipedia/commons/2/25/Polyphony.JPG",1932
-"Paul Klee","Senecio","https://upload.wikimedia.org/wikipedia/commons/8/86/Senecio2.JPG",1922
-"Paul Klee","Pesce magico","https://upload.wikimedia.org/wikipedia/commons/2/2c/Fish_Magic.JPG",1925
-"Paul Klee","L'avventura di una ragazza","https://upload.wikimedia.org/wikipedia/commons/7/77/A_Young_Lady%27s_Adventure.JPG",1921
-"Paul Klee","Signs in yellow","https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Paul_Klee_-_Signs_In_Yellow_-_Google_Art_Project.jpg/1024px-Paul_Klee_-_Signs_In_Yellow_-_Google_Art_Project.jpg",1937
+artist,title,url,year,media
+"Paul Klee","Palloncino Rosso","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Red_Balloon.JPG/1920px-Red_Balloon.JPG",1922,"painting"
+"Paul Klee","Polifonia","https://upload.wikimedia.org/wikipedia/commons/2/25/Polyphony.JPG",1932,"painting"
+"Paul Klee","Senecio","https://upload.wikimedia.org/wikipedia/commons/8/86/Senecio2.JPG",1922,"painting"
+"Paul Klee","Pesce magico","https://upload.wikimedia.org/wikipedia/commons/2/2c/Fish_Magic.JPG",1925,"painting"
+"Paul Klee","L'avventura di una ragazza","https://upload.wikimedia.org/wikipedia/commons/7/77/A_Young_Lady%27s_Adventure.JPG",1921,"painting"
+"Paul Klee","Signs in yellow","https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Paul_Klee_-_Signs_In_Yellow_-_Google_Art_Project.jpg/1024px-Paul_Klee_-_Signs_In_Yellow_-_Google_Art_Project.jpg",1937,"painting"
+"Vasilij Kandinskij","Composition X","https://upload.wikimedia.org/wikipedia/commons/9/97/Vassily_Kandinsky%2C_1939_-_Composition_10.jpg",1939,"painting"
+"Vasilij Kandinskij","Red spot II","https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wassily_Kandinsky_Red_Spot_II_1921.jpg/1574px-Wassily_Kandinsky_Red_Spot_II_1921.jpg",1921,"painting"
+"Vasilij Kandinskij","Giallo, rosso, blu","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kandinsky_-_Jaune_Rouge_Bleu.jpg/1599px-Kandinsky_-_Jaune_Rouge_Bleu.jpg",1925,"painting"
+"Vasilij Kandinskij","Impressione III (Concerto)","https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Wassily_Kandinsky_-_Impression_III_%28Concert%29_-_Google_Art_Project.jpg/1538px-Wassily_Kandinsky_-_Impression_III_%28Concert%29_-_Google_Art_Project.jpg",1911,"painting"
+"Vasilij Kandinskij","30","https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Trente_Kandinsky_1937.jpg/1485px-Trente_Kandinsky_1937.jpg",1937,"painting"
+"Vasilij Kandinskij","Composition VIII","https://upload.wikimedia.org/wikipedia/commons/4/47/Vassily_Kandinsky%2C_1923_-_Composition_8%2C_huile_sur_toile%2C_140_cm_x_201_cm%2C_Mus%C3%A9e_Guggenheim%2C_New_York.jpg",1923,"painting"
+"Gustav Klimt","Judith I","https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Gustav_Klimt_039.jpg/586px-Gustav_Klimt_039.jpg",1901,"painting"
+"Gustav Klimt","Adele Bloch-Bauer I","https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Gustav_Klimt_046.jpg/1197px-Gustav_Klimt_046.jpg",1907,"painting"
+"Gustav Klimt","Il bacio","https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1194px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",1907,"painting"
+"Vincent van Gogh","The Night Cafe","https://upload.wikimedia.org/wikipedia/commons/5/5e/Vincent_Willem_van_Gogh_076.jpg",1888,"painting"
+"Vincent van Gogh","Sower at Sunset","https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/The_Sower.jpg/1510px-The_Sower.jpg",1888,"painting"
+"Vincent van Gogh","Starry Night","https://upload.wikimedia.org/wikipedia/commons/6/66/VanGogh-starry_night_ballance1.jpg",1889,"painting"
+"Vincent van Gogh","The Church in Auvers-sur-Oise",https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise%2C_View_from_the_Chevet_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise%2C_View_from_the_Chevet_-_Google_Art_Project.jpg",1890,"painting"

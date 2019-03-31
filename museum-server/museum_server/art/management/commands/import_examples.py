@@ -23,10 +23,12 @@ class Command(BaseCommand):
                 title = row['title']
                 url = row['url']
                 year = row.get('year', None)
+                media = row.get('media', None)
 
                 try:
                     artwork = Artwork.objects.get(title=title)
                     self.stdout.write(self.style.WARNING('Skipping existing artwork: "%s"' % artwork.title))
+                    continue
                 except Artwork.DoesNotExist:
                     pass
 
@@ -54,6 +56,7 @@ class Command(BaseCommand):
                     title=title,
                     artist=artist,
                     year=year,
+                    media=media,
                     image=temp_file
                 )
 
