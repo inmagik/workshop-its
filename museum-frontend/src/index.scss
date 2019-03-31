@@ -29,4 +29,20 @@
         flex: 1;
     }
 
+    .artwork-thumb {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .artwork-info {
+        font-size: 12px;
+        height: 80px;
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

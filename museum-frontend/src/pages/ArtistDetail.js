@@ -2,6 +2,20 @@ import React from 'react'
 import TopBar from '../components/TopBar'
 
 
+class ImagesGallery extends React.Component {
+    render() {
+        return (
+            <div className="ImagesGallery">
+
+
+            </div>
+        )
+    }
+}
+
+
+
+
 export default class ArtistDetail extends React.Component {
 
     state = {
@@ -35,7 +49,7 @@ export default class ArtistDetail extends React.Component {
     render(){
         const { artist } = this.state
 
-        return (<div className="container with-topbar ArtistDetail">
+        return (<div className="container with-topbar ArtistDetail pb-4">
             <TopBar></TopBar>
             {artist && <div className="">
                 <div className="row">
@@ -50,6 +64,23 @@ export default class ArtistDetail extends React.Component {
                         </div>
                     </div>
                 </div>
+                
+                {/* images gallery */}
+                <h3 className="mt-4">Opere</h3>
+                {artist.artworks.length > 0 && <div className="row mt-4">
+                    {artist.artworks.map(artwork => (
+                        <div className="col-md-3 mb-4" key={artwork.id}>
+                            <img className="artwork-thumb" src={artwork.image}></img>
+                            <div className="artwork-info p-2 bg-light">
+                                <b>{artwork.title}</b>
+                                <p> {artwork.year}</p>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>}
+
+
             </div>}
 
         </div>)
