@@ -1,5 +1,6 @@
 import React from 'react'
-
+import TopBar from '../components/TopBar'
+import { Link } from 'react-router-dom'
 
 export default class ArtistList extends React.Component {
 
@@ -31,8 +32,10 @@ export default class ArtistList extends React.Component {
 
 
     render(){
-        return (<div className="container-fluid">
-            hello there, artists list!
+        return (<div className="container-fluid py-5 with-topbar">
+            <TopBar></TopBar>
+            <div className="row"></div>
+
         </div>)
     }
 
