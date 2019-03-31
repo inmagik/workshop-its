@@ -9,6 +9,7 @@ class Artist(models.Model):
     birth_date = models.DateField(blank=True, null=True)
     death_date = models.DateField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
+    image = models.ImageField(blank=True, null=True, upload_to="artists")
 
     def __str__(self):
         return self.name
