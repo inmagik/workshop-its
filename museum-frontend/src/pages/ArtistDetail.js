@@ -53,10 +53,10 @@ export default class ArtistDetail extends React.Component {
             <TopBar></TopBar>
             {artist && <div className="">
                 <div className="row">
-                    <div className="col col-3">
+                    <div className="col-md-3">
                         <img className="artist" src={artist.image}></img>
                     </div>
-                    <div className="col d-flex flex-column justify-content-center">
+                    <div className="col-md-9 d-flex flex-column justify-content-center">
                         <div className="p-2">
                             <h2>{artist.name}</h2>
                             <i>{artist.birth_date} - {artist.death_date}</i>
