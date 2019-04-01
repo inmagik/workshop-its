@@ -19,9 +19,10 @@ class ImagesGallery extends React.Component {
         return (
             <div className="ImagesGallery">
                 <div className="row mt-4">
-                    {artworks.map(artwork => (
-                        <div className="col-md-3 mb-4" key={artwork.id} onClick={()=>{this.setState({isOpen: true})}}>
-                            <img className="artwork-thumb" src={artwork.image}></img>
+                    {artworks.map((artwork, i) => (
+                        <div className="col-md-3 mb-4 pointer" key={artwork.id} 
+                            onClick={()=>{this.setState({isOpen: true, photoIndex: i})}}>
+                            <img className="artwork-thumb" src={artwork.image} alt={artwork.title}></img>
                             <div className="artwork-info p-2 bg-light">
                                 <b>{artwork.title}</b>
                                 <p> {artwork.year}</p>
@@ -91,7 +92,7 @@ export default class ArtistDetail extends React.Component {
         const { artist } = this.state
 
         return (<div className="container with-topbar ArtistDetail pb-4">
-            <TopBar></TopBar>
+            <TopBar title={artist ? artist.name : ''}></TopBar>
             {artist && <div className="">
                 <div className="row">
                     <div className="col-md-3">
