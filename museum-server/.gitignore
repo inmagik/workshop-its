@@ -2,13 +2,11 @@
 
 #docker stuff
 data/
+uploads/
 dump/
-mongo_data/
 # environment
 env/
 
-# docs stuff
-materiale_bper/
 
 #sqlite
 *.sqlite
