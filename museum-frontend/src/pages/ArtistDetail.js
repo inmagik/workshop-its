@@ -1,13 +1,54 @@
 import React from 'react'
 import TopBar from '../components/TopBar'
+import Lightbox from 'react-image-lightbox';
+
 
 
 class ImagesGallery extends React.Component {
+
+    state = {
+        photoIndex: 0,
+        isOpen: false,
+    }
+
     render() {
+        const { artworks } = this.props
+        const images = artworks.map(artwork => artwork.image)
+        const { isOpen, photoIndex } = this.state
+
         return (
             <div className="ImagesGallery">
+                <div className="row mt-4">
+                    {artworks.map(artwork => (
+                        <div className="col-md-3 mb-4" key={artwork.id} onClick={()=>{this.setState({isOpen: true})}}>
+                            <img className="artwork-thumb" src={artwork.image}></img>
+                            <div className="artwork-info p-2 bg-light">
+                                <b>{artwork.title}</b>
+                                <p> {artwork.year}</p>
+                            </div>
 
+                        </div>
+                    ))}
+                </div>
 
+                {isOpen && (
+                    <Lightbox
+                        mainSrc={images[photoIndex]}
+                        nextSrc={images[(photoIndex + 1) % images.length]}
+                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                        onCloseRequest={() => this.setState({ isOpen: false })}
+                        onMovePrevRequest={() =>
+                        this.setState({
+                            photoIndex: (photoIndex + images.length - 1) % images.length,
+                        })
+                        }
+                        onMoveNextRequest={() =>
+                        this.setState({
+                            photoIndex: (photoIndex + 1) % images.length,
+                        })
+                        }
+                    />
+                    )}
             </div>
         )
     }
@@ -67,21 +108,12 @@ export default class ArtistDetail extends React.Component {
                 
                 {/* images gallery */}
                 <h3 className="mt-4">Opere</h3>
-                {artist.artworks.length > 0 && <div className="row mt-4">
-                    {artist.artworks.map(artwork => (
-                        <div className="col-md-3 mb-4" key={artwork.id}>
-                            <img className="artwork-thumb" src={artwork.image}></img>
-                            <div className="artwork-info p-2 bg-light">
-                                <b>{artwork.title}</b>
-                                <p> {artwork.year}</p>
-                            </div>
-
-                        </div>
-                    ))}
-                </div>}
+                {artist.artworks.length > 0 && <ImagesGallery  artworks={artist.artworks}/>}
 
 
             </div>}
+
+            
 
         </div>)
     }
