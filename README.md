@@ -1,6 +1,6 @@
 # FULLSTACK WEB DEV WORKSHOP
 
-## pdfs
+### PDFS
 
 Presentazione: [PDF](https://github.com/inmagik/workshop-its/raw/master/FULLSTACK%20WEB%20DEVELOPMENT.pdf)
 
@@ -8,7 +8,7 @@ Intro git: [PDF](https://github.com/inmagik/workshop-its/raw/master/Versionament
 
 Intro sviluppo siti django: [PDF](https://github.com/inmagik/workshop-its/raw/master/Sviluppo%20siti%20con%20django.pdf)
 
-## GETTING STARTED
+### GETTING STARTED
 
 - install git
 - install node
